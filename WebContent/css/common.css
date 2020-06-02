@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url("../fonts/fonts.css");
+@viewport {width:divice-width;}
+@-ms-viewport {width:divice-width;}
+@-o-viewport {width:divice-width;}
+
+/* 자주쓰는 스타일 */
+*{}
+htm{font-size:16px;}
+body{font-family: 'NanumGothic';}
+h1, h2, h3, h4, h5, h6{font-family: 'NanumBarunpen';}
+ol, ul { margin-top: 0; margin-bottom: 0px; }
+.font_NanumGothic, .font_NanumGothic *{font-family: 'NanumGothic';}
+.font_NanumBarunpen, .font_NanumBarunpen *{font-family: 'NanumBarunpen';}
+.font_w_r{font-weight: 400;}
+.font_w_b, b{font-weight: 700;}
+.font_w_eb{font-weight: 900;}
+.dp_block{display : block;}
+.dp_none{display : none;}
+.dp_tbl{display: table;}
+.dp_tbl_row{display: table-row;}
+.dp_tbl_cell{display: table-cell;}
+.f_left_wrrap{width:auto; margin:0 auto;}
+.f_left{float:left; display:block;}
+.v_align_m{vertical-align:middle;}
+.d_pc{display:block;}
+.d_mb{display:none;}
+
+a, a:hover, a:focus{text-decoration: none; color:inherit;}
+/* a:focus { outline: none; outline-offset:inherit; } */
+img{border:none;width:100%;}
+
+
+/* table{border-collapse: collapse;} */
+.p_0{padding:0px;}
+.m_0{margin:0px;}
+
+
+/* 레이아웃 스타일 */
+.main_menu, .main_menu *{}
+.main_menu{padding: 0 10%; background: none; position: fixed; width: 100%; z-index:9999; min-height: 52px;}
+.main_menu_wrapper {height: inherit; }
+
+.tbl_menu{height: inherit; width:100%;}
+
+.c_left { width: 15%; text-align:left;}
+.c_center { width: auto; }
+.c_right { width: 50%; text-align:right;}
+
+.logo img {width: 100px;height: auto;}
+
+.m{font-family: 'Roboto Slab'; font-weight:300; font-size:20px; }
+.tbl_menu_right{float: right; }
+.tbl_menu_right .m{padding-right:40px;color:#fff;}
+.tbl_menu_right tr .m:first-child{padding-left:40px;}
+.tbl_menu_right tr .m:last-child{padding-right:0px;}
+.tbl_menu_right .m a{}
+.tbl_menu_right .m.active a, .tbl_menu_right .m a:hover {border-bottom:1px solid #fff;}
+.tbl_menu_right .active{}
+
+.btn_menu,.ver_menu{display:none;}
+
+.btn-top { display:block; position: fixed; right: 5%; bottom: 5%; background: #111; width: 50px; height: 50px; color: #fff; border-radius: 5px; text-align: center; padding:10px; z-index:999;}
+.btn-top *{height:inherit;}
+.btn-top a img{width: 100%;height: 100%;}
+
+
+.ppt_body{overflow-x: auto;}
+
+.container-fluid{padding:15vh 0px;}
+.row{margin:0 auto;max-width: 80%;}
+.col{}
+
+.ppt_cell{}
+.ppt_cell.col-md-12{padding:0px;}
+
+/* Main */
+#main{height:100vh; 
+background-image: url("../images/golden-gate-bridge.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+text-align:center;
+}
+#main h1, #main h4{color:#fff; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#main h1{font-size:12vh; font-weight : 600; text-shadow: .5vh .7vh 0px #000;}
+#main h4{font-size:5.8vh; font-weight : 600; text-shadow: .4vh .5vh 0px #000; margin-bottom: 5vh;}
+#main .btn { border: none; box-shadow: none !important; border-radius: 0px; padding: 1.3vh 5vh; font-size: 2vh; background: #111; text-transform: uppercase;}
+#main .btn:hover {background : #fff; color : #111; }
+
+#motto{text-align:center; padding-top:5vh; padding-bottom:5vh; background:#111; color:#fff; font-size:2vh;}
+#motto .row{}
+p:last-child{margin-bottom:0px;}
+
+.p_tit, .p_tit_fff { margin: 0 auto; width: fit-content; max-width:200px; text-align:center; font-size: 6vh; padding-bottom: 30px; position: relative; font-family: 'NanumBarunpen'; font-weight: 600; line-height: 1; margin-bottom: 6vh;}
+.p_tit .undline, .p_tit_fff .undline{width: 100%; height: .8vh; background: #000; display: block; position: absolute; bottom: 0; border-radius: 20px;}
+.p_tit_fff{color:#fff;}
+.p_tit_fff .undline{background:#fff;}
+.scroll .row:first-child{margin-bottom:7vh;}
+
+/* About */
+#about{min-height:600px; }
+#about .row .col{padding:0px;}
+.tbl_abt{width:100%; height:100%;}
+.tbl_abt_l{width:50%;}
+.tbl_abt_l img{width:100%; height:auto;}
+.tbl_abt_r{ background:#EDEDED; font-family: 'NanumBarunpen'; font-size:1.7232094776521272vw; line-height:1; padding:0 5.385029617662897vw;}
+.tbl_abt_r .wrapper{}
+.abt_tit{font-size:3.231017770597738vw;}
+.abt_subTit{margin-top:2.6925148088314486vw; margin-bottom:1vw; font-weight:700;}
+.abt_mb{}
+.tbl_abt.abt_mb{margin: 0 15vw;}
+.tbl_abt.abt_mb .tbl_abt_r{width: 69.6219035202086vw;height: 69.6219035202086vw;padding: 6.51890482398957vw; font-size:3.1290743155149934vw;}
+.tbl_abt.abt_mb .abt_tit{font-size: 6vw;}
+.tbl_abt.abt_mb .abt_subTit{margin-top: 4vw;}
+.tbl_abt.abt_mb p{margin-bottom: 2vw;}
+.a_bt_sns{width: 2.7vw; height: 2.7vw; display: inline-block; margin-left:5px;}
+p .a_bt_sns:first-child{margin-left:0;}
+.sp_sns, .sp_sns_fff{width: 100%;height: 100%;display: block;}
+
+.sp_sns{background: url("../images/icon/icon_linkedin.png") no-repeat center/cover;}
+.sp_sns_linkedin{background-image: url("../images/icon/icon_linkedin.png");}
+.sp_sns_facebook{background-image: url("../images/icon/icon_facebook.png");}
+.sp_sns_twitter{background-image: url("../images/icon/icon_twitter.png");}
+.sp_sns_instagram{background-image: url("../images/icon/icon_instagram.png");}
+.sp_sns_kakao{background-image: url("../images/icon/icon_kakao.png");}
+
+.sp_sns_fff{background: url("../images/icon/icon_linkedin_fff.png") no-repeat center/cover;}
+.sp_sns_fff.sp_sns_linkedin{background-image: url("../images/icon/icon_linkedin_fff.png");}
+.sp_sns_fff.sp_sns_facebook{background-image: url("../images/icon/icon_facebook_fff.png");}
+.sp_sns_fff.sp_sns_twitter{background-image: url("../images/icon/icon_twitter_fff.png");}
+.sp_sns_fff.sp_sns_instagram{background-image: url("../images/icon/icon_instagram_fff.png");}
+.sp_sns_fff.sp_sns_kakao{background-image: url("../images/icon/icon_kakao_fff.png");}
+
+
+/* Career */
+#career{min-height:auto; background:#F4F4F4;}
+
+
+
+/* Skills */
+#skills{min-height:600px; background:#83493F; color:#fff;}
+.c_tit{font-size:2em;font-family: 'NanumBarunpen';margin-bottom: 7vh;}
+#skills .f_left{margin-right: 3vw;text-align: center;}
+
+/* Portfolio */
+#portfolio{min-height:600px; }
+.portfolio-group{width:100%;}
+.filter-button-group{text-align: center; margin-bottom:2vw;}
+.filter-button-group .button{}
+.filter-button-group .btn.is-checked{color: #fff;background-color: #343a40;border-color: #343a40;}
+.grid {width:100%;position: relative;}
+.element-item {
+    position: relative;
+    float: left;
+    width: calc(25% - 10px);
+    height: auto;
+    margin: 5px;
+    background: #fff;
+    color: #262524;
+    text-align:center;
+    overflow:hidden;
+    cursor: pointer;
+}
+.element-item:hover{
+	
+}
+.element-item h3{margin-bottom:0;}
+.element-item img{width:100%; height:auto;}
+.scale {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.7s ease-in-out;
+}
+.scale:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.scale img{width: 100%;height: 12vw;margin: 1vw 0;}
+
+
+
+
+/* Contact */
+#contact{background: url(../images/bg_contact.jpg) no-repeat center/cover; position: relative; color:#fff; padding:22vh 0px !important;}
+.bg{width: 100%; height: 100%; background: #000; position: absolute; top: 0; opacity: 0.4; }
+.con{text-align:center;font-size:20px;}
+.bt_sns{margin-right: 0.3vw;}
+.bt_sns img{width:45px; height:45px;}
+
+/* Footer */
+#footer {background: #111; color: #fff; padding: 5vh 0px; text-align: center; }
+
+/* mobile */
+@media screen and (max-width: 767px) {
+#main{
+height:100vh; 
+background: url('../images/golden-gate-bridge.jpg') no-repeat center/cover;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; 
+background-attachment: initial;
+text-align:center;
+}
+.row{margin: 0px;max-width: 100%;}
+.main_menu{padding: 0 5%; background:#111;}
+.btn_menu{display:block;float: right;display: block; background: #111; border: none; width: 50px; height: 50px; color: #fff; border-radius: 5px; text-align: center; padding: 7px 10px;}
+.btn_menu img{width:100%; height:100%;}
+.tbl_menu_right {display:none;}
+
+.ver_menu { display: none; width: 100%; background: #111; opacity: 0.7; color: #fff; position: absolute; top: auto; left: 0px; }
+.ver_menu ul{padding:0px;}
+.ver_menu ul li.m { list-style:none; text-align: center; border-bottom: 1px solid #fff; }
+.ver_menu ul li.m:first-child { border-top: 1px solid #fff; }
+.ver_menu .m.active{ background: #fff; color: #111; }
+.ver_menu .m a { width: 100%; height: 100%; display: block; padding: 2% 5%; }
+
+#main h1{font-size:16.0vw; }
+#main h4{font-size:9.8vw; }
+
+.d_pc{display:none;}
+.d_mb{display:block;}
+
+.a_bt_sns{width: 7vw; height: 7vw;}
+
+
+#skills .f_left{margin-right: 8vw;text-align: center;}
+
+
+#portfolio{}
+.filter-button-group{margin-bottom:6vh;}
+.element-item {width: calc(50% - 10px);}
+.scale img{width: 100%;height: 18vh;margin: 1vw 0;}
+
+
+
+
+}
+
+
+@media all and (min-width:768px) and (max-width:1334px) {
+#main h1{font-size:12vw; }
+#main h4{font-size:7vw; }
+}

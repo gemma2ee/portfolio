@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+ <!-- Isotope does not require any CSS files -->
+<!--     <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen"> -->
+
+
+<style>
+.filter-group{width:100%;}
+.filter-button-group{text-align: center; margin-bottom:2vw;}
+.filter-button-group .button{}
+.filter-button-group .btn.is-checked{color: #fff;background-color: #343a40;border-color: #343a40;}
+.grid {width:100%;position: relative;}
+.element-item {
+    position: relative;
+    float: left;
+    width: calc(25% - 30px);
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    background: #888;
+    color: #262524;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class=" " data-js="filtering-demo">
+	<div class="filter-group" data-js="filtering-demo">
+	  <div class="filter-button-group button-group js-radio-button-group">
+	    <button class="button is-checked btn btn-outline-dark" data-filter="*">ALL</button>
+	    <button class="button btn btn-outline-dark" data-filter=".pc">PC</button>
+	    <button class="button btn btn-outline-dark" data-filter=".responsive">RESPONSIVE</button>
+	    <button class="button btn btn-outline-dark" data-filter=".mobile">MOBILE</button>
+	  </div>
+	
+	  <div class="grid">
+	      <div class="element-item pc" data-category="pc">
+	        pc1
+	      </div>
+	      <div class="element-item pc" data-category="pc">
+	        pc2
+	      </div>
+	      <div class="element-item mobile" data-category="mobile">
+	        mobile
+	      </div>
+	      <div class="element-item responsive" data-category="responsive">
+	        responsive
+	      </div>
+	      
+	      
+	  </div>
+	
+	</div>
+
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+  <script src="js/isotope-docs.min.js?6"></script>
+
+
+
+
+</body>
+</html>

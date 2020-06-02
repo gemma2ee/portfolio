@@ -1,0 +1,26 @@
+.c100 {
+	background-color: #343A41;
+	margin: 0.1em auto;
+    float: none;
+    font-family: 'NanumBarunpen';
+}
+.c100:after {
+	background-color: #82493F;
+}
+.c100.skyblue > span {
+  color: #343A41;
+}
+.c100.skyblue .bar,
+.c100.skyblue .fill {
+  border-color: #74A6A1 !important;
+}
+.c100.skyblue:hover > span {
+  color: #74A6A1;
+}
+.c100.skyblue.dark .bar,
+.c100.skyblue.dark .fill {
+  border-color: #74A6A1 !important;
+}
+.c100.skyblue.dark:hover > span {
+  color: #74A6A1;
+}
